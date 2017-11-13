@@ -2,15 +2,14 @@
 
 module.exports = app => {
   class WeatherService extends app.Service {
-    * baidapi(lon, lat) {
+    async baidapi(lon, lat) {
       // read config
       var weatherapi = this.app.config.baidu.weatherapi;
-
-      const data = yield this.ctx.curl(`${serverUrl}&location=${lon}|${len}`, {
+      const result = await this.ctx.curl(`${weatherapi}&location=${lon},${lat}`, {
         dataType: 'json',
       });
-
-      return data;
+      console.log(result);
+      return result.data;
     }
   }
   return WeatherService;

@@ -4,16 +4,16 @@ const Controller = require('egg').Controller;
 
 class WeatherController extends Controller {
   async index() {
-    yield ctx.render('weather/index.html');
+    await this.ctx.render('weather/index.html');
   }
 
   async queryWeather() {
     const { ctx, app } = this;
     const { lon, lat } = ctx.request.query;
-    const result = yield ctx.service.weather.baidapi(url, data, realIp);
+    const result = await ctx.service.weather.baidapi(lon, lat);
     this.ctx.body = result;
   }
 
 }
 
-module.exports = WeatheController;
+module.exports = WeatherController;
