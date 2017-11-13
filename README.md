@@ -1,7 +1,5 @@
 # we-first-app
 
-
-
 ## QuickStart
 
 <!-- add docs here for user -->
@@ -31,3 +29,4 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+some demo app
