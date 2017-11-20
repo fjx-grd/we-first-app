@@ -9,8 +9,15 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+  config.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.html': 'nunjucks',
+    },
+  };
+
   config.baidu = {
-    weatherapi : 'http://api.map.baidu.com/telematics/v3/weather?output=json&ak=899166509d1c7898bbad044a910bffa0'
+    weatherapi: 'http://api.map.baidu.com/telematics/v3/weather?output=json&ak=899166509d1c7898bbad044a910bffa0'
   }
 
   return config;
