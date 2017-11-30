@@ -1,0 +1,152 @@
+@import url("media.css");
+@import url("base.css");
+
+/* 顶部*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.view {
+    width: 100%;
+    height: 100%;
+    background: url("../../images/backgroundpic.jpg") no-repeat;
+    background-size: 100% 100%;
+    /* 地区*/
+    /*天气详情*/
+}
+
+.view .nar_top {
+    width: 6.4rem;
+    height: 0.9rem;
+}
+
+.view .nar_top span {
+    line-height: 0.9rem;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.view .nar_top .nar_left {
+    float: left;
+    left: 0;
+    margin-left: 0.2rem;
+}
+
+.view .nar_top .nar_right {
+    float: right;
+    right: 0;
+    margin-right: 0.2rem;
+}
+
+.view .place_now {
+    height: 5rem;
+    width: 6.4rem;
+    position: relative;
+}
+
+.view .place_now .idress {
+    position: absolute;
+    right: 0;
+    top: 0.4rem;
+    color: #fff;
+    font-size: 0.6rem;
+    padding-right: 0.45rem;
+}
+
+.view .place_now .wn {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.75rem;
+    width: 1.95rem;
+    height: 1.74rem;
+}
+
+.view .place_now .wy {
+    position: absolute;
+    top: 1.95rem;
+    left: 2.4rem;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+.view .place_now .wendu {
+    position: absolute;
+    bottom: 0.9rem;
+    left: 0.7rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.view .place_now .airzhiliang {
+    position: absolute;
+    bottom: 0.4rem;
+    left: 0.8rem;
+}
+
+.view .place_now .airzhiliang ul .kzl {
+    background-color: rgba(33, 33, 33, 0.8);
+    padding: 0.06rem;
+}
+
+.view .place_now .airzhiliang ul .wuran {
+    background-color: rgba(143, 24, 26, 0.9);
+    padding: 0.06rem;
+}
+
+.view .place_now .airzhiliang ul .weif {
+    margin-left: 0.5rem;
+}
+
+.view .place_now .airzhiliang ul li {
+    color: #fff;
+    font-size: 0.25rem;
+    float: left;
+}
+
+.view .weather_footer {
+    bottom: 0;
+    height: 4.2rem;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(143, 24, 26, 0.9);
+}
+
+.view .weather_footer ul {
+    width: 100%;
+    height: 100%;
+}
+
+.view .weather_footer ul li {
+    height: 4.2rem;
+    float: left;
+    width: 20%;
+    padding: 0.4rem;
+    border-left: 1px solid #fff;
+}
+
+.view .weather_footer ul li img {
+    width: 100%;
+    height: 0.4rem;
+}
+
+.view .weather_footer ul li .duchange span {
+    display: block;
+    color: #fff;
+    font-size: 0.2rem;
+    margin-top: 0.3rem;
+}
+
+.view .weather_footer ul li .duchange .line {
+    width: 0.01rem;
+    background-color: #fff;
+    height: 0.8rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.view .weather_footer ul li:first-child {
+    border-left: none;
+}
