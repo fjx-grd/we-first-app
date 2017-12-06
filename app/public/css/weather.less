@@ -1,141 +1,169 @@
-@import url("./media.css");
-@import url("./base.css");
+        @import url("./media.css");
+    @import url("./base.css");
+    /* 顶部*/
 
-/* 顶部*/
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-.view {
-    // 
-    width: 100%;
-    height: 100%;
-    background: url("/public/images/backgroundpic.jpg") no-repeat;
-    background-size: 100% 100%;
-    .nar_top {
-        width: 6.4rem;
-        height: 0.9rem;
-        span {
-            line-height: 0.9rem;
-            font-size: 0.8rem;
-            color: #fff;
-        }
-        .nar_left {
-            float: left;
-            left: 0;
-            margin-left: 0.2rem;
-        }
-        .nar_right {
-            float: right;
-            right: 0;
-            margin-right: 0.2rem;
-        }
+    html,
+    body {
+        width: 100%;
+        height: 100%;
     }
-    /* 地区*/
-    .place_now {
-        height: 5rem;
-        width: 6.4rem; // padding:0.45rem 0.45rem 0.65rem 0.75rem;
+
+    .loading {
+        width: 100%;
+        height: 100%;
+        background: black;
         position: relative;
-        .idress {
+        .loop {
+            width: 1rem;
+            height: 1rem;
+            background: url("/public/images/feng.png") no-repeat;
+            background-size: 100%;
             position: absolute;
-            right: 0;
-            top: 0.4rem;
-            color: #fff;
-            font-size: 0.6rem;
-            padding-right: 0.45rem;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            animation-name: ani_loop;
+            animation-duration: 1s;
+            animation-iteration-count: infinite; // animation-direction: alternate;
+            animation-timing-function: ease;
         }
-        .wn {
-            position: absolute;
-            top: 0.7rem;
-            left: 0.75rem;
-            width: 1.95rem;
-            height: 1.74rem;
-        } //  195,240
-        .wy {
-            position: absolute;
-            top: 1.95rem;
-            left: 2.4rem;
-            color: #fff;
-            font-size: 0.4rem;
-        }
-        .wendu {
-            position: absolute;
-            bottom: 0.9rem;
-            left: 0.7rem;
-            color: #fff;
-            font-size: 1rem;
-        }
-        .airzhiliang {
-            position: absolute;
-            bottom: 0.4rem;
-            left: 0.8rem;
-            ul {
-                .kzl {
-                    background-color: rgba(33, 33, 33, 0.8); // #2c3532
-                    // opacity: 0.8;
-                    padding: 0.06rem;
-                }
-                .wuran {
-                    background-color: rgba(254, 127, 10, 0.9);
-                    padding: 0.06rem;
-                }
-                .weif {
-                    margin-left: 0.5rem;
-                }
-                li {
-                    color: #fff;
-                    font-size: 0.25rem;
-                    float: left;
-                }
+        @keyframes ani_loop {
+            from {
+                
+                transform:translate(-50%, -50%) rotateZ(0);
+            }
+            to {
+                transform: translate(-50%, -50%) rotateZ(360deg);
             }
         }
+   
     }
-    /*天气详情*/
-    .weather_footer {
-        bottom: 0;
-        height: 4.2rem; // bottom: 0;
-        position: absolute;s
-        width: 100%;
-        background-color: rgba(254, 127, 10, 0.8);
-        ul {
+        .view {
+            // 
             width: 100%;
             height: 100%;
-            li {
-                height: 4.2rem;
-                float: left;
-                width: 25%;
-                padding: 0.5rem;
-                border-left: 1px solid #fff;
-                img {
-                    // display: block;
-                    // top: 0.3rem;
-                    // left: 0.35rem;
-                    width: 100%;
-                    height: 0.4rem;
+            background: url("/public/images/bg5.jpg") no-repeat;
+            background-size: 100% 100%;
+            .nar_top {
+                width: 6.4rem;
+                height: 0.88rem; // span {
+                //     line-height: 0.9rem;
+                //     font-size: 0.8rem;
+                //     color: #fff;
+                // }
+                // .nar_left {
+                //     float: left;
+                //     left: 0;
+                //     margin-left: 0.2rem;
+                // }
+                // .nar_right {
+                //     float: right;
+                //     right: 0;
+                //     margin-right: 0.2rem;
+                // }
+            }
+            /* 地区*/
+            .place_now {
+                height: 5.6rem;
+                width: 6.4rem; // padding:0.45rem 0.45rem 0.65rem 0.75rem;
+                position: relative;
+                .idress {
+                    position: absolute;
+                    right: 0;
+                    top: 0.45rem;
+                    color: #fff;
+                    font-size: 0.6rem;
+                    padding-right: 0.45rem;
                 }
-                .duchange {
-                    // display: block;
-                    span {
-                        display: block;
-                        color: #fff;
-                        font-size: 0.2rem;
-                        margin-top: 0.3rem;
-                    }
-                    .line {
-                        width: 0.01rem;
-                        background-color: #fff;
-                        height: 0.8rem;
-                        margin: 0 auto;
-                        margin-top: 0.3rem;
+                .wn {
+                    position: absolute;
+                    top: 0.7rem;
+                    left: 0.75rem;
+                    width: 1.95rem;
+                    height: 1.74rem;
+                } //  195,240
+                .wy {
+                    position: absolute;
+                    top: 1.95rem;
+                    left: 2.4rem;
+                    color: #fff;
+                    font-size: 0.4rem;
+                }
+                .wendu {
+                    position: absolute;
+                    bottom: 0.9rem;
+                    left: 0.7rem;
+                    color: #fff;
+                    font-size: 1rem;
+                }
+                .airzhiliang {
+                    position: absolute;
+                    bottom: 0.1rem;
+                    left: 0.8rem;
+                    ul {
+                        .kzl {
+                            background-color: rgba(33, 33, 33, 0.8); // #2c3532
+                            // opacity: 0.8;
+                            padding: 0.06rem;
+                        }
+                        .wuran {
+                            background-color: rgba(254, 127, 10, 0.9);
+                            padding: 0.06rem;
+                        }
+                        .weif {
+                            margin-left: 0.5rem;
+                        }
+                        li {
+                            color: #fff;
+                            font-size: 0.25rem;
+                            float: left;
+                        }
                     }
                 }
             }
-            li:first-child {
-                border-left: none;
+            /*天气详情*/
+            .weather_footer {
+                height: 4.26rem;
+                position: absolute;
+                width: 100%;
+                background-color: rgba(254, 127, 10, 0.8);
+                margin-top: 0.61rem;
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    li {
+                        height: 4.2rem;
+                        float: left;
+                        width: 25%;
+                        padding: 0.5rem;
+                        border-left: 1px solid #fff;
+                        img {
+                            // display: block;
+                            // top: 0.3rem;
+                            // left: 0.35rem;
+                            width: 100%;
+                            height: 0.4rem;
+                        }
+                        .duchange {
+                            // display: block;
+                            span {
+                                display: block;
+                                color: #fff;
+                                font-size: 0.2rem;
+                                margin-top: 0.3rem;
+                            }
+                            .line {
+                                width: 0.01rem;
+                                background-color: #fff;
+                                height: 0.8rem;
+                                margin: 0 auto;
+                                margin-top: 0.3rem;
+                            }
+                        }
+                    }
+                    li:first-child {
+                        border-left: none;
+                    }
+                }
             }
         }
-    }
-}

@@ -46,6 +46,9 @@
                 success: function(data) {
                     // var top = template("diqu");
                     // $(".place_now").html(top);
+                    if (data) {
+                        $('.loading').fadeOut();
+                    }
                     console.log(data);
                     // var idress = $(".idress>span");
                     $(".idress>span").html(data.results[0].currentCity);
